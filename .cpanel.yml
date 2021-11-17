@@ -3,4 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/rivopelu/public_html/
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
