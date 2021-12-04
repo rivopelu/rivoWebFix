@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*==================== VARIABLES CSS ====================*/
+
+:root {
+    --header-height: ;
+    /*========== Colors ==========*/
+    /* Change favorite color */
+    --hue-color: 205;
+    /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    /* HSL color mode */
+    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --container-color: #fff;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+    /*========== Font and typography ==========*/
+    --body-font: 'Poppins', sans-serif;
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    /*========== Margenes Bottom ==========*/
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1.5rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+
+/* Font size for large devices */
+
+@media screen and (min-width: 968px) {
+     :root {
+        --big-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+
+/*========== Variables Dark theme ==========*/
+
+body.dark-theme {
+    --first-color-second: hsl(var(--hue-color), 30%, 8%);
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 75%);
+    --input-color: hsl(var(--hue-color), 29%, 16%);
+    --body-color: hsl(var(--hue-color), 28%, 12%);
+    --container-color: hsl(var(--hue-color), 29% 16%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
+
+.halaman__2__container {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* audio playerrrr */
+
+.music img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    padding-top: 30px;
+}
+
+.music {
+    width: 70%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--input-color);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1.5rem;
+}
+
+.music__info {
+    color: var(--text-color);
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+}
+
+.music__info p {
+    font-size: 20px;
+    margin: 10px 0 60px;
+}
+
+.music__control {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music__control i {
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .15);
+    text-align: center;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.music__control i:hover {
+    background-color: rgba(0, 0, 0, .30);
+}
+
+
+/* dark  */
+
+.dark {
+    padding-top: 5rem;
+}
+
+.content__2,
+.stream {
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .1s;
+}
+
+.stream__list {
+    display: flex;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.stream__list li {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.stream__list li a {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-left: .5rem;
+    margin-right: .5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.text__list {
+    font-size: 20px;
+    display: flex;
+    z-index: -100;
+}
+
+.stream__list li a:hover {
+    color: var(--text-color-light);
+    font-size: 2.5rem;
+}
