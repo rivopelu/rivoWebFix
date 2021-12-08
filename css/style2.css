@@ -198,3 +198,21 @@ body.dark-theme {
     transition: .3s;
     opacity: 100;
 }
+
+.lirik__bait {
+    font-size: 15px;
+    color: var(--text-color);
+    width: 320px;
+    padding-top: .5rem;
+}
+
+.sosmed__halaman2 {
+    margin-bottom: 2rem;
+}
+
+.sosmed__halaman2-list a {
+    color: var(--title-color);
+    background-color: var(--first-color);
+    padding: .5rem 1rem;
+    border-radius: 20px;
+}
